@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head>
+        <link rel="stylesheet" href="css/stils2.css">
+<meta charset="UTF-8">
+<title>Pārveidojam</title>
+</head>
+<body>
+<h1>Kā pāriet no vienas skaitīšanas sistēmas uz citu.</h1>
+<br>
+<dl>
+<dt>Universālais princips ir doto skaitli dalīt ar atlikumu ar
+tās skaitīšanas sistēmas bāzes vērtību, uz kuru gribam pāriet. </dt>
+</dl>
+<dl>
+<dd>Pieraksta iegūto dalījumu un atlikumu. </dd>
+<dd>Dalījumu vēlreiz dala ar atlikumu. </dd>
+<dd>Darbības atkārto tik ilgi, līdz dalījums ir 0.</dd>
+</dl>
+Atlikumu virkne no otra gala ir rezultāts.<br>
+Piemēri.<br>
+<dl>
+<dt>Skaitli 123<sub>10</sub> pārveidojam binārajā
+pierakstā:</dt>
+</dl>
+<dl>
+<dd>143 :2= 71, atl. 1</dd>
+<dd>71:2=30, atl. 1</dd>
+<dd>35:2=17, atl. 1</dd>
+<dd>17:2=8, atl 1</dd>
+<dd>8:2=4, atl. 0</dd>
+<dd>4:2=2, atl , 0</dd>
+<dd>2:2=1, atl. 0</dd>
+<dd>1:2=0, atl. 1</dd>
+</dl>
+143<sub>10</sub>=10001111 jeb 1+2+4+8+128<br>
+<dl>
+<dt>Skaitli 143<sub>10</sub> pārveidojam
+heksadecimālajā pierakstā:</dt>
+</dl>
+<dl>
+<dd>143:16=8, atl. 15 jeb F</dd>
+<dd>8:16=0, atl. 8</dd>
+<dd>143<sub>10</sub> = 8F jeb 8*16+15</dd>
+</dl>
+<dl>
+<dt>Skaitli 143<sub>10</sub> pārveidojam oktālajā
+pierakstā:</dt>
+</dl>
+<dl>
+<dd>143:8=17, atl 7</dd>
+<dd>17:8=2, atl. 1</dd>
+<dd>2:8=0, atl. 2</dd>
+</dl>
+143<sub>10</sub> =217 jeb 2*64+1*8+7<br>
+<br>
+Ja abu skaitīšanas sistēmu bāze ir divnieka pakāpe, var izmantot ātrāku
+metodi. <br>
+<p>Lai pārietu no divnieku sistēmas uz sešpadsmitnieku sistēmu,
+ciparus no
+labās puses sadala grupās pa četri un pārveido heksadecimalajā ciparā:<br>
+111100111= &nbsp;0001 &nbsp;1110&nbsp; 0111=1E7<sub>16</sub><br>
+Lai pārietu no divnieku sistēmas uz&nbsp; astotnieku sistēmu,
+ciparus no
+labās puses sadala grupās pa trīs un pārveido oktālaajā ciprā:<br>
+111100111= &nbsp;111&nbsp; 100 111=747<sub>8</sub><br>
+Lai pārietu no heksadecimālās uz bināro sistēmu, katru heksadecimālo
+ciparu uzraksta kā četrciparu bimāro skaitli:<br>
+F23<sub>16</sub>=1111 &nbsp;0010 &nbsp;0011<br>
+Lai pārietu no oktālās uz bināro ssitēmu, katru heksadecimālo ciparu
+uzraksta kā trīsciparu bināro skaitli:<br>
+123<sub>8</sub>=001 &nbsp;010 &nbsp;011<br>
+</p>
+<br>
+<a href="darbibas.html">Aritmētiskās darbības binārajā
+skaitīšanas sistēmā</a><br>
+<br>
+<br>
+<br>
+</body></html>

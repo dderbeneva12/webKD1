@@ -1,0 +1,23 @@
+body{
+    line-height: 1.6;
+    font-size:120%;
+}
+table,tr,th,td{
+     border: 1px brown outset;
+    table-layout:fixed;
+    width:60%;
+    font-family: Lucida Console, monospace;
+}
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+tr:hover{
+    background-color: #ddd;
+}
+th{
+  background-color: #4CAF50;
+  color: white;
+}
+span {
+  font-family: Lucida Console, monospace;
+}

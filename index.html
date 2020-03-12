@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/kdStils.css">
+    </head>
+    <body>
+        <h1>Skaitīšanas sistēmas.</h1>
+<p>Skaitīšanas sistēmas iedala pozicionālajās un nepozicionālajās.</p>
+<p>Datoros lieto pozicionālās skaitīšanas sistēmas - decimālo, <a href="#binara"> bināro</a>, <a href="#oktala">oktālo jeb astotnieku</a>, <a href="#heks"> heksadecimālo jeb sešpadsmitnieku</a>.
+Pozicionālajās sistēmās cipara atrašanās vieta maina tā vērtību – ja salīdzina skaitļus <span>7000</span> un <span>0007</span>, tad redzam, 
+ka vērtīgāks jeb lielāks ir skaitlis <span>7000</span>, jo tajā cipars <span>7</span> atrodas tūkstošu nevis vienu pozīcijā. 
+Nepozicionālajās skaitīšanas sistēmās cipara vērtība ir nemainīga. 
+Tāda ir, piemēram, romiešu skaitīšanas sistēma, kurā skaitļa vērtību nosaka ciparu savstarpējais izvietojums, nevis pieraksta pozīcija.
+</p>
+<table>
+    <tr><th>Romiešu skaitļi</th><th>Arābu skaitļi</th></tr>
+    <tr><td>V</td><td>5</td></tr>
+    <tr><td>X</td><td>10</td></tr>
+    <tr><td>L</td><td>50</td></tr>
+    <tr><td>C</td><td>100</td></tr>
+    <tr><td>D</td><td>500</td></tr>
+    <tr><td>M</td><td>1000</td></tr>
+    <tr><td>MCMXCVII</td><td>1997</td></tr>
+</table>
+<p>Pozicionālajām skaitīšanas sistēmām var būt dažādas bāzes. Mēs ikdienā izmantojam desmitnieku skaitīšanas sistēmu. 
+    Tas nozīmē, ka izmantotā bāze ir desmit, tiek izmantoti desmit dažādi cipari no <span>0</span> līdz <span>9</span>, bet skaitļu pierakstā pozīcijas 
+sauc par vieniem, desmitiem, simtiem, tūkstošiem utt., atbilstoši desmitnieka pakāpei. Piemēram, septiņi tūkstoši trīs simti četrdesmit trīs.
+</p>
+<table>
+    <tr><th>7</th><th>3</th><th>4</th><th>3</th></tr>
+    <tr><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+    <tr><td>10<sup>3</sup>=1000</td><td>10<sup>2</sup>=100</td><td>10<sup>1</sup>=10</td><td>10<sup>0</sup>=1</td></tr>
+</table>
+<p id="binara">Binārās skaitīšanas sistēmas bāze ir divi, tiek izmantoti tikai divi dažādi cipari – <span>0</span> un <span>1</span>, bet skaitļu pierakstā 
+pozīciju vērtības ir viens, divi, četri, astoņi utt.
+</p>
+<table>
+    <tr><th>1</th><th>0</th><th>1</th><th>1</th></tr>
+    <tr><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+    <tr><td>2<sup>3</sup>=8</td><td>2<sup>2</sup>=4</td><td>2<sup>1</sup>=2</td><td>2<sup>0</sup>=1</td></tr>
+</table>
+<p>Šī skaitļa vērtība desmitnieku skaitīšanas sistēmā ir <span>1*8+0*4+1*2+1*1=11</span>. Nosaukt binārās skaitīšanas sistēmas skaitli pa pozīcijām, 
+līdzīgi kā decimālajā sistēmā, var, bet tas skan dīvaini – viens astoņi viens divi viens.
+</p>
+<p id="oktala">Astotnieku jeb oktālajā skaitīšanas sistēmā bāze ir <span>8</span>, tiek izmantoti astoņi dažādi cipari no <span>0</span> līdz <span>7</span>, skaitļu pierakstā pozīcijas ir viens, astoņi, sešdesmit četri utt.
+</p>
+<table>
+<tr><th>1</th><th>3</th><th>4</th><th>7</th></tr>
+<tr><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>8<sup>3</sup>=512</td><td>8<sup>2</sup>=64</td><td>8<sup>1</sup>=8</td><td>8<sup>0</sup>=1</td></tr>
+</table>
+<p>Šī skaitļa vērtība desmitnieku skaitīšanas sistēmā ir <span> 1*512+3*64+4*8+7*1=2053</span>.</p>
+<p>Jo mazāka bāze, jo skaitļa pierakstā vairāk ciparu. <span>123<sub>8</sub>=83<sub>10</sub>=1010011<sub>2</sub></span>.</p>
+<p>Datoros visi aprēķini notiek binārajā skaitīšanas sistēmā, jo to ir visvieglāk attēlot ar elektriskiem signāliem – 
+    ja strāva plūst, tiek attēlots <span>1</span>, ja neplūst <span>0</span>. 
+</p>
+<p>Taču šāds skaitļu pieraksts ir garš un cilvēkiem neērts, tāpēc lietotāja līmenī tiek lietota decimālā skaitīšanas sistēma.</p>
+<p >Dažos gadījumos tiek izmantota arī sešpadsmitnieku skaitīšanas sistēma, piemēram, krāsu apzīmējumos, atmiņas adresācijai u.c.</p>
+<p id="heks">Sešpadsmitnieku jeb heksadecimālās skaitīšanas sistēmas bāze ir skaitlis <span>16</span>, 
+    tiek izmantoti sešpadsmit dažādi cipari no <span>0</span> līdz <span>F</span>. </p>
+<table style="border:2px solid black;" >
+    <tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+    <tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr>
+</table>
+<p>Skaitļa pierakstā pozīciju vērtības ir viens, sešpadsmit, divi simti piecdesmit seši utt.
+</p>
+<table>
+<tr><th>1</th><th>B</th><th>0</th><th>A</th></tr>
+<tr><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>16<sup>3</sup>=4096</td><td>16<sup>2</sup>=256</td><td>16<sup>1</sup>=16</td><td>16<sup>0</sup>=1</td></tr>
+</table>
+<p>Šī skaitļa vērtība decimālajā skaitīšanas sistēmā ir <span>1*4096+11*256+0*16+10*1=6922</span></p>
+<p>Krāsas apzīmējums <span style="color:#5A6E47">#5A6E47</span> nozīmē, ka tās sastāvā ir <span>5A=90</span> daļas <span style="color:red"> sarkanās</span>, 
+    <span>6E=110</span> daļas <span style="color:green"> zaļās</span> un <span>47=71</span> daļas <span style="color:blue"> zilās</span> krāsas.</p>
+<p> 
+Ikdienā dažādās zemēs dažādos laikos cilvēki ir lietojuši un vēl joprojām lieto vēl arī citas pozicionālās skaitīšanas sistēmas. Piemēram, laika skaitīšanā tiek izmantota sešdesmitnieku skaitīšanas sistēma, daudzas lietas (krūzes, karotes, glāzes u.c) bieži pārdod komplektā pa seši vai divpadsmit jeb pusduci vai duci, gadā ir <span>12</span> mēneši.
+Agrāk lietotas arī dažādas citas <a href="https://odo.lv/Blog/150502" target="_blank" > eksotiskas skaitīšanas sistēmas</a>, piemēram, mezgliņu sistēma.
+</p>
+<a href="https://www.researchgate.net/publication/235926948_Method_for_Automatic_Counting_Root_Nodules_Using_Digital_Images" target="_blank" > <img src="img/a15a.jpg" alt="mezgliņu sistēma"></a>
+<p><a href="parveidojam.html" target="_blank" >Kā pāriet no vienas skaitīsanas sistēmas uz citu</a></p>
+    </body>
+</html> 
+
